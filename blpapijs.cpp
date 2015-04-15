@@ -1509,7 +1509,7 @@ Session::elementValueToValue(Isolate *isolate,
         }
         case blpapi::DataType::SEQUENCE:
             return elementToValue(isolate, e.getValueAsElement(idx));
-		case blpapi::DataType::CHOICE:{
+		case blpapi::DataType::CHOICE: {
 			if (e.isArray()) {
 				return elementToValue(isolate, e.getValueAsElement(idx));
 			}
